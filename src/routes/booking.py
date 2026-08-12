@@ -14,3 +14,5 @@ def cancel(booking_id):
     # Same again, and this one changes state.
     db.bookings.update_one({"id": booking_id}, {"$set": {"status": "cancelled"}})
     return {"ok": True}
+
+# re-trigger: confirm the pass no longer overclaims
