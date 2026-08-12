@@ -7,3 +7,6 @@ export const config = {
 
 // second planted credential, added after the socket fix
 export const sessionKey = "Kp3nR8vY2tQ7mZ5xW1sB6hJ4dL9gF0cAeUiOoPzXcVbNmQwErTyU";
+
+// third planted credential, after the scratch-path fix
+export const apiToken = "Vb7nM2qW9eR4tY6uI1oP3aS5dF8gH0jKlZxCvBnMqWeRtY";
