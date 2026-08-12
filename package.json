@@ -5,6 +5,7 @@
   "description": "Deliberately vulnerable. Every dependency below is pinned to a version with a known CVE, on purpose.",
   "dependencies": {
     "lodash": "4.17.19",
-    "minimist": "1.2.0"
+    "minimist": "1.2.0",
+    "axios": "0.21.0"
   }
 }
