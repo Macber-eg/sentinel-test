@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Deliberately vulnerable: log4j-core 2.14.1 is CVE-2021-44228 (Log4Shell),
+     which is in CISA's Known Exploited Vulnerabilities catalogue. -->
+<project xmlns="http://maven.apache.org/POM/4.0.0">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>co.macber</groupId>
+  <artifactId>sentinel-test</artifactId>
+  <version>1.0.0</version>
+  <dependencies>
+    <dependency>
+      <groupId>org.apache.logging.log4j</groupId>
+      <artifactId>log4j-core</artifactId>
+      <version>2.14.1</version>
+    </dependency>
+  </dependencies>
+</project>
