@@ -1,0 +1,21 @@
+# A deployment that does nothing, so the gate has something real to hold.
+#
+# `environment: production` is the whole point: it makes GitHub create a real
+# deployment, which triggers the deployment protection rule, which asks Sentinel
+# whether this commit may ship. Without an environment there is no deployment
+# and nothing to protect.
+name: Deploy
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    name: deploy to production
+    runs-on: ubuntu-latest
+    environment: production
+    steps:
+      - name: pretend to ship
+        run: echo "If you are reading this, the gate let it through."
