@@ -19,3 +19,5 @@ jobs:
     steps:
       - name: pretend to ship
         run: echo "If you are reading this, the gate let it through."
+
+# trigger: does GitHub hold this deployment?
